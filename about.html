@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is e-commerce website project by using html and css you can learn so many new things by creating this project">
+    <meta name="keywords" content="html, css, ecommerce website project">
+    <meta name="author" content="Anshu jaiswal">
+    <!---------title----------->
+    <title>e-commerce | about</title>
+    <!------Styles css link-------->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <!-------font awesome icon link------->
+    <script src="https://kit.fontawesome.com/b37c54ba41.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!--------Header Start---------->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <!-----logo Start------>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="125px" alt="logo-picture"></a>
+                </div>
+                <!-------logo End------->
+                <!---------Nav Start----->
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <!------Nav End---------->
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+        </div>
+    </header>
+    <!--------------Header End---------------->
+
+    <div class="about-page">
+        <div class="small-container">
+            <div class="about-heading">
+                <h2>E-commerce/About</h2>
+            </div>
+            <div class="about-main">
+                <div id="first-paira">
+                <h3 class="sub-heading">Introduction</h3>
+                <p class="about-p">Loremm is a one stop shop for all your fashion and lifestyle needs. Being India's largest e-commerce
+                    store for fashion and lifestyle products, Myntra aims at providing a hassle free and enjoyable
+                    shopping experience to shoppers across the country with the widest range of brands and products on
+                    its portal. The brand is making a conscious effort to bring the power of fashion to shoppers with an
+                    array of the latest and trendiest products available in the country.
+                </p>
+                </div>
+                <div class="about-paira">
+                <h3>Value proposition</h3>
+                <p class="about-p">Loremm's value proposition revolves around giving consumers the power and ease
+                    purchasing fashion.          
+                    and lifestyle products online. Offerings such as the largest in-season product catalogue, 100%
+                    authentic products, cash on delivery and 30 day return policy make Myntra, the preferred shopping
+                    destination in the country. To make online shopping easier for you, a dedicated customer connect
+                    team is on standby to answer your queries 24x7.
+                </p>
+               </div>
+               <div class="about-paira">
+                <h3>Brands</h3>
+                <p class="about-p">Loremm understands its shoppers' needs  and caters to them with choice of apparel,
+                   accessories, cosmetics and footwear from over 500 leading Indian and international brands. Prominent brands include Adidas, Nike, Puma, Catwalk, Inc 5, United Colors of Benetton, FCUK, Timberland, Avirate, FabIndia and Biba to name a few. You can also shop from some recently introduced labels such as - Roadster, Sher Singh, Dressberry, Kook N Keech and ETC.  
+                </p>
+                </div>
+                <div class="about-paira">
+                <h3 class="sub-heading">Recognitions</h3>
+                <ul class="about-ul">
+                    <li>Awarded <strong>'Fashion eRetailer of the Year 2013'</strong> by Franchise India – Indian eRetail Awards</li>
+                    <li>Awarded <strong>'Best E-commerce Website for 2012'</strong> by IAMAI – India Digital Awards</li>
+                    <li>Awarded<strong>'Images Most Admired Retailer of the Year: Non–Store Retail'</strong> for 2012 by Images Group</li>
+                    <li>Awarded <strong>'Best E-commerce Partner of the year 2011-12'</strong> by Puma India</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------footer Start--------->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="applogo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Our Purpose Is To Sustainably Make the Plesure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!----------------footer End----------->
+    <!--------------Js for toggle menu------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight =
+                    "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

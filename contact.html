@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="This is e-commerce website project by using html and css you can learn so many new things by creating this project" />
+    <meta name="keywords" content="html, css, ecommerce website project" />
+    <meta name="author" content="Anshu jaiswal" />
+    <!---------title----------->
+    <title>e-commerce | cart</title>
+    <!------Styles css link-------->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap"
+        rel="stylesheet" />
+    <!-------font awesome icon link------->
+    <script src="https://kit.fontawesome.com/b37c54ba41.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--------Header Start---------->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <!-----logo Start------>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="125px" alt="logo-picture" /></a>
+                </div>
+                <!-------logo End------->
+                <!---------Nav Start----->
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <!------Nav End---------->
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" /></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+            </div>
+        </div>
+    </header>
+    <!--------------Header End---------------->
+
+    <!---------------Contact Start------------->
+
+    <div class="contact-section">
+        <div class="contact-main">
+            <section class="contact-banner">
+                <h2 class="main-heading">
+                    <img src="images/contact-title.svg" alt="Let's
+             contact image" />
+                </h2>
+            </section>
+            <section class="contact-content">
+                <div class="contact-container">
+                    <div class="part">
+                        <div class="equal-col">
+                            <a class="external-btn" href="" target="-_blank">
+                            <h3>Customer Support</h3>
+                            </a>
+                            <a class="external-btn" href="" target="-_blank">
+                            <h3>
+                                Partners (for sellers)
+                            </h3>
+                            </a>
+                            <a class="external-btn" href="" target="-_blank">
+                            <h3>
+                                Media Relations
+                            </h3>
+                            </a>
+                        </div>
+                        <div class="equal-col">
+                            <h3>Corporate Offices</h3>
+                            <div class="contact-loction">
+                                <div class="cotact-loction-box">
+                                    <h4>Bengaluru</h4>
+                                    <p>
+                                        Buildings Alyssa, Begonia and Clover situated in Embassy
+                                        Tech Village, Outer Ring Road, Devarabeesanahalli
+                                        Village, Varthur Hobli, Bengaluru – 560103, India
+                                    </p>
+                                </div>
+                                <div class="cotact-loction-box">
+                                    <h4>Bengaluru</h4>
+                                    <p>
+                                        Buildings Alyssa, Begonia and Clover situated in Embassy
+                                        Tech Village, Outer Ring Road, Devarabeesanahalli
+                                        Village, Varthur Hobli, Bengaluru – 560103, India
+                                    </p>
+                                </div>
+                                <div class="cotact-loction-box">
+                                    <h4>Bengaluru</h4>
+                                    <p>
+                                        Buildings Alyssa, Begonia and Clover situated in Embassy
+                                        Tech Village, Outer Ring Road, Devarabeesanahalli
+                                        Village, Varthur Hobli, Bengaluru – 560103, India
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!---------------Contact End--------------->
+
+    <!----------------footer Start--------->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="applogo">
+                        <img src="images/play-store.png" />
+                        <img src="images/app-store.png" />
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" />
+                    <p>
+                        Our Purpose Is To Sustainably Make the Plesure and Benefits of
+                        Sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <p class="copyright">Copyright 2020 - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!----------------footer End----------->
+    <!--------------Js for toggle menu------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
